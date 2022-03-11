@@ -1,0 +1,46 @@
+Work Breakdown Structure (WBS)
+
+0. 登入頁面(獨立)
+  - 串接登入的 API (body data: { username: "", password: "" }) v
+
+1. 後台介面
+  - 驗證 API PATH 是否為本人(串接驗證的 API) @ toast v
+  - 導覽列 @ Navigation Bar v
+
+2. 產品管理頁面
+  @ 功能
+    - 取得遠端資料庫的全部產品列表／單項產品(get) @ 分頁 v
+    - 新增產品(post) @ modal v
+    - 更新產品(put) @ modal v
+    - 刪除單項產品(delete) @ modal v
+    - 產品啟用狀態的顯示('is_enabled':1) v
+    - 上傳產品圖片 API (upload image)
+
+3. 訂單管理頁面
+  @ 功能
+    - 取得遠端資料庫的全部訂單列表(get) @ 分頁 v
+    - 更新訂單付款狀態(put) @ modal v
+    - 刪除單筆／全部訂單(delete) @ modal v
+
+4. 優惠券管理頁面(coupon)
+  @ 功能
+    - 取得遠端資料庫的全部優惠券列表(get) @ 分頁 v
+    - 新增優惠券(post) @ modal v
+    - 更新優惠券(put) @ modal v
+    - 刪除單筆優惠券(delete) @ modal v
+
+5. 貼文公告頁面(提供給前台最新消息)
+  @ 功能
+    - 取得遠端資料庫的全部文章列表／單篇文章(get) @ 分頁 v
+    - 新增文章(post) @ modal v
+    - 更新文章(put) @ modal v
+    - 刪除單篇文章(delete) @ modal v
+
+6. 登出功能
+  - 串接登出的 API v
+
+7. 串接圖片上傳 API v
+
+8. alert(ToastMessage) / loading(VueLoading) 元件 v
+
+9. 404 頁面 v

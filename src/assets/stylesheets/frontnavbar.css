@@ -1,0 +1,82 @@
+nav {
+  padding: 0.5rem;
+  background-color: var(--bs-gray-900);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  background-color: var(--bs-gray-900);
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  user-select: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hamburger span {
+  display: block;
+  position: relative;
+  margin-bottom: 6px;
+  width: 33px;
+  height: 4px;
+  background-color: var(--bs-gray-200);
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.hamburger:hover span:nth-child(2) {
+  transform: translateX(10px);
+  background-color: var(--bs-purple);
+}
+
+.hamburger.is-active span:nth-child(1) {
+  width: 40px;
+  transform: translate(4px, -4px) rotate(47deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  transform: translateX(50px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+  width: 40px;
+  transform: translate(0px, 5px) rotate(-406deg);
+}
+
+.hamburger.is-active:hover span {
+  background-color: var(--bs-purple);
+}
+
+ul {
+  margin: 0 -16px;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+}
+
+ul > li {
+  margin: 16px 0;
+}
+
+ul > li > a {
+  margin: 0 16px;
+  font-weight: 600;
+  transition: 0.4s !important;
+  padding: 8px 16px !important;
+  border-radius: 99px;
+}
+
+ul > li > a:hover {
+  background-color: var(--bs-purple);
+}
